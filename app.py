@@ -41,11 +41,11 @@ with st.container(border=True):
     col1, col2 = st.columns(2)
 
     # Metrics for the first row
-    col1.metric("Total Loans", f"{loan.shape[0]:,}")
-    col1.metric("Total Loan Amount", f"${loan['loan_amount'].sum():,.0f}")
+    col1.metric("Total Loans", f"{loan.shape[0]:,}", help="total number of loans")
+    col1.metric("Total Loan Amount", f"${loan['loan_amount'].sum():,.0f}", help="sum of all loan amounts")
 
-    col2.metric("Average Interest Rate", f"{loan['interest_rate'].mean():.0f}%")
-    col2.metric("Average Loan Amount", f"${loan['loan_amount'].mean():,.0f}")
+    col2.metric("Average Interest Rate", f"{loan['interest_rate'].mean():.0f}%", help='percentage of the loan amount that the borrower has to pay')
+    col2.metric("Average Loan Amount", f"${loan['loan_amount'].mean():,.0f}", help='average interest rate across all loans')
 
 
 ## ----- TIME_BASED ANALYSIS ------
