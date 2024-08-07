@@ -21,9 +21,9 @@ st.sidebar.title("Dashboard Filters and Features")
 st.sidebar.header("Features")
 st.sidebar.write("""
 - **Overview**: Provides a summary of key loan metrics.
+- **Time-Based Analysis**: Shows trends over time and loan amounts.
 - **Loan Performance**: Analyzes loan conditions and distributions.
 - **Financial Analysis**: Examines loan amounts and distributions based on conditions.
-- **Time-Based Analysis**: Shows trends over time and loan amounts.
 """)
 
 
